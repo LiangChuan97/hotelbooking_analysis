@@ -7,7 +7,7 @@ Goal 3: Evaluate performance of channels, market segments, and countries across 
 Goal 4: Analyze repeat-guest behavior and historical booking patterns to determine the impact of past cancellations on future bookings and develop strategies for loyalty programs or retention campaigns to reduce cancellations and increase customer lifetime value.
 
 ***
-**Problem:** 
+**Problems:** 
 1. Identify which hotels and the dates that produce the highest cancellation rate and estimate revenue lost.<p>
 2. Find where ADR (average daily rate) is low vs. cancellation and which deposit/customer types inflict revenue risk so pricing/policies can be optimised.<p>
 3. Determine which distribution channels, market segments and countries give the best combination of ADR, booking volume and low cancellation so marketing spend can be reallocated.<p>
