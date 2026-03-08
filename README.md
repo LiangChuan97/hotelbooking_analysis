@@ -1,106 +1,213 @@
-### Hotel Booking Dataset Analysis ###
-***
-A critical challenge for online travel agencies (OTAs) is balancing high booking volumes with low cancellation rates, since cancellations reduce revenue predictability, disrupt hotel partners’ inventory planning, and weaken customer experience.
-By addressing these problems, OTAs can improve partner trust, reduce overbooking or underutilization of hotel inventory, and enhance marketing ROI by targeting customers less likely to cancel.<p>Goal 1: Analyze historical booking data to pinpoint hotels and time periods with the highest cancellation rates and quantify the potential revenue lost from these cancellations to inform operational and strategic decisions.<p>
-Goal 2: Identify customer segments that pose higher revenue risk and recommend targeted pricing, deposit policies, or incentives to mitigate losses.<p>
-Goal 3: Evaluate performance of channels, market segments, and countries across ADR, booking volume, and cancellation rates.<p>
-Goal 4: Analyze repeat-guest behavior and historical booking patterns to determine the impact of past cancellations on future bookings and develop strategies for loyalty programs or retention campaigns to reduce cancellations and increase customer lifetime value.
+<h1 align="center"> 🏨 Hotel Booking Demand Analysis using SQL and Tableau</h1>
 
-***
-**Problems:** 
-1. Identify which hotels and the dates that produce the highest cancellation rate and estimate revenue lost.<p>
-2. Find where ADR (average daily rate) is low vs. cancellation and which deposit/customer types inflict revenue risk so pricing/policies can be optimised.<p>
-3. Determine which distribution channels, market segments and countries give the best combination of ADR, booking volume and low cancellation so marketing spend can be reallocated.<p>
-4. Measure repeat-guest performance, quantify how previous cancellation and non-cancellation affect current cancellations and design loyalty/retention actions.<br>
+<p align="center">
+<img src="https://img.shields.io/badge/Tool-SQL-blue">
+<img src="https://img.shields.io/badge/Dashboard-Tableau-orange">
+<img src="https://img.shields.io/badge/Domain-Hospitality%20Analytics-green">
+</p>
 
-***
-**Methodology:** Data was sourced from <a href = "https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand?resource=download">kaggle </a>, cleaned and transformed using SQL. Exploratory data analysis was performed to identify trends and correlations. An interactive dashboard was then developed in tableau to present key findings.
-***
-**Key Findings and Recommendations:** <p>
-<img width="656" height="865" alt="image" src="https://github.com/user-attachments/assets/21b41eab-e712-4d84-9ad3-42000758ce2b" />
+## 🚀 Project Summary
+
+This project analyzes hotel booking demand data to identify patterns in booking cancellations, revenue performance, and customer behavior. Using SQL for data preparation and Tableau for visualization, the analysis examines booking trends across hotels, seasons, distribution channels, and customer segments. 
+
+The findings highlight key drivers of cancellation risk and revenue performance, enabling data-driven strategies to improve pricing policies, marketing allocation, and customer retention in the hospitality industry.
+
+## 🧠 Skills Demonstrated
+
+- SQL Data Cleaning & Transformation
+- Exploratory Data Analysis (EDA)
+- Business Intelligence & Data Visualization
+- Revenue Performance Analysis
+- Customer Segmentation
+- Hospitality Analytics
+- Data Storytelling
+
+## 📑 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Business Problem](#-business-problem)
+- [Dataset](#-dataset)
+- [Methodology](#-methodology) 
+- [Key Insights and Recommendations](#-key-insights-and-recommendations)
+- [Key Results](#-key-results)
+- [Business Value](#-business-value)
+- [Tech Stack](#-tech-stack)
+- [Conclusion](#-conclusion)
+
+## 📌 Project Overview
+
+This project analyzes hotel booking demand data to identify patterns in booking cancellations, customer behavior, and revenue performance. Using SQL for data preparation and Tableau for visualization, the analysis uncovers operational inefficiencies and revenue risks associated with cancellations.
+
+By examining booking trends across hotels, seasons, customer segments, distribution channels, and countries, the project provides actionable insights to help online travel agencies (OTAs) and hotel operators improve revenue stability, marketing effectiveness, inventory planning, customer experience
+
+The project includes:
+- Exploratory data analysis to identify cancellation patterns and revenue risks
+- Analysis of hotel performance across time periods and booking channels
+- Customer segmentation analysis to identify high-risk cancellation groups
+- Evaluation of repeat guest behavior and booking patterns
+- Interactive Tableau dashboard for visual exploration of booking trends and revenue impact
+
+## 🏦 Business Problem
+
+Online travel agencies (OTAs) face a major challenge in balancing high booking volumes with low cancellation rates. High cancellation rates create several operational problems:
+- Reduced revenue predictability
+- Disruptions in hotel inventory planning
+- Increased operational inefficiencies
+- Reduced partner trust between hotels and OTAs
+
+The objective of this analysis is to help organizations:
+- Identify hotels and time periods with high cancellation risk and estimate revenue lost
+- Understand customer segments that contribute to revenue loss
+- Evaluate the performance of distribution channels, markets segments and countries
+- Develop strategies to reduce cancellations and improve customer retention
+
+## 🗂 Dataset
+
+The dataset contains historical hotel booking records including:
+- Hotel type (City Hotel / Resort Hotel)
+- Booking dates and stay duration
+- Customer segments and distribution channels
+- Average Daily Rate (ADR)
+- Booking cancellations
+- Country of origin
+
+which was sourced from <a href = "[https://public.tableau.com/app/learn/sample-data](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand?resource=download)">kaggle.</a>
+
+## ⚙️ Methodology
+
+The analysis workflow included:
+
+1. Data Cleaning and Preparation
+- Data extracted and transformed using SQL
+- Missing values handled and variables standardized
+- Key metrics such as cancellation rate and potential revenue loss calculated
+
+2. Exploratory Data Analysis
+
+Explored relationships between:
+- Cancellation rates across hotel types and seasons
+- Deposit types and revenue loss
+- Booking channels and customer segments
+- Country-level booking behavior
+- Repeat guest behavior
+
+3. Data Visualization
+
+An interactive Tableau dashboard was developed to present insights and enable stakeholders to explore booking trends and cancellation risks.
+
+## 📊 Key Insights and Recommendations
+
+<h2 align="center">📉 Cancellation Trends by Hotel and Season
+</h2>
+
+<p align="center"><img width="656" height="865" alt="image" src="https://github.com/user-attachments/assets/21b41eab-e712-4d84-9ad3-42000758ce2b" />
+
+City Hotels recorded extremely high cancellation rates between 53% and 71% during summer months (July–August 2015).
+
+Resort Hotels also experienced elevated cancellations during June–August 2017 (≈37–38%).
+
+Revenue lost aligns with high cancellations, but some months with moderate cancellation rates still have significant revenue loss (high total_potential_revenue).
+
+Recommendations:
+- Introduce prepayment or cancellation fees during high-risk months
+- Offer non-refundable booking discounts to stabilize revenue
+- Implement reminder emails before arrival dates to reduce last-minute cancellations
+- Focus on months with moderate cancellation rate but high revenue potential for promotional campaigns
+
+<h2 align="center">💳 Deposit Policies and Revenue Risk</h2>
+
+<p align="center"><img width="656" height="865" alt="image" src="https://github.com/user-attachments/assets/ea89043f-f72e-4247-b333-e05216ee0fba" />
+
+The largest revenue loss occurs from No Deposit / Transient bookings for both hotel types, contributing approximately $11M in lost revenue.
+
+Some Non-Refund segments showed unexpectedly high cancellation rates, suggesting operational or data issues.
+
+Transient-Party and Contract segments also contribute meaningfully in volume and lost rev, but at lower cancellation% (often 10–33%). Contract shows lower ADR in some rows but moderate lost revenue.
+
+Recommendations:
+- Encourage prepayment discounts to convert No Deposit bookings
+- Introduce deposit guarantees for high-risk booking segments
+- Offer future stay credits instead of full refunds to reduce immediate revenue loss
+  
+<h2 align="center">🌍 Distribution Channels and Market Performance</h2>
+
+<p align="center"><img width="656" height="812" alt="image" src="https://github.com/user-attachments/assets/b90f2919-8501-46b1-996c-0684e3f5e44f" />
+
+The TA/TO Aviation channel consistently delivers high booking volume (e.g., PRT: 25,214 bookings; GBR: 4,727 bookings)with strong ADR (~98–117) and manageable cancellation rates (~26–33%).
+
+Countries such as GBR, ESP, ITA, and DEU in Aviation and Direct segments demonstrate the best balance between:
+- High ADR
+- High booking volume
+- Moderate cancellation rates
+
+Recommendations:
+- Allocate marketing spend toward high-performing channels and markets
+- Prioritize Aviation and Direct segments for promotional campaigns
+- Develop country-specific marketing strategies
+
+<h2 align="center">👥 Repeat Guest Behavior</h2>
+
+<p align="center"><img width="656" height="857" alt="image" src="https://github.com/user-attachments/assets/d2f8a938-fc44-4940-a2cf-1df66623d0b8" />
+
+Repeat guests show significantly lower cancellation rates:
+- Repeat guests: 14.69% cancellation
+- New guests: 38.04% cancellation
+
+However, 97% of bookings come from new customers, highlighting a large opportunity for customer retention.
+
+Recommendations:
+- Implement loyalty programs to retain repeat customers
+- Offer discount incentives for second bookings
+- Encourage repeat bookings through targeted promotions
+
+<h2 align="center">⚠️ Impact of Previous Cancellations</h2>
+
+<p align="center"><img width="656" height="385" alt="image" src="https://github.com/user-attachments/assets/0ed50b9c-e451-410a-9897-fa5ccaee2307" />
+
+Guests with a history of cancellations exhibit extremely high future cancellation rates (≈92%) compared to guests with no previous cancellations (≈34%).
+
+Recommendations:
+- Require prepayment or deposits for customers with prior cancellations
+- Introduce behavior-based pricing strategies
+- Reward reliable customers with loyalty benefits
+
+## 🏆 Key Results
+
+- City Hotels experienced extremely high cancellation rates (53–71%) during peak summer months, leading to significant potential revenue loss.
+- No-deposit transient bookings generated the largest share of revenue leakage, accounting for over $11M in lost revenue.
+- TA/TO Aviation and Direct channels produced the strongest combination of high booking volume and strong ADR, particularly in markets such as GBR, ESP, ITA, and DEU.
+- Repeat guests cancel far less frequently (≈14.7%) than new guests (≈38%), highlighting the value of customer retention strategies.
+
+## 💡 Business Value
+
+The insights from this analysis help hotel operators and online travel agencies:
+- Reduce revenue loss by introducing dynamic deposit and cancellation policies for high-risk booking periods.
+- Optimize marketing spend toward high-performing distribution channels and markets with strong ADR and manageable cancellation rates.
+- Improve revenue stability by encouraging repeat bookings through loyalty programs and targeted promotions.
+- Identify high-risk customer segments and implement deposit or pricing strategies to mitigate cancellation risk.
+- Strengthen operational planning and inventory management by anticipating seasonal cancellation patterns
+
+## 🧰 Tech Stack
+
+- 🐍 SQL
+- 📊 Tableau
+- 📈 Exploratory Data Analysis
+- 📉 Business Intelligence
+- 🏨 Hospitality Analytics
+
+## 🏁 Conclusion
+
+The hotel booking analysis shows that revenue performance and booking reliability vary across distribution channels, market segments, and countries. Direct and Corporate channels consistently generate higher Average Daily Rates (ADR) while maintaining lower cancellation rates, making them the most dependable sources of revenue. 
+
+TA/TO channels, particularly Aviation and Online Travel Agencies, contribute the highest booking volumes but come with moderate cancellation risks, indicating opportunities to optimize marketing campaigns and reduce revenue leakage. 
+
+In contrast, Group bookings and Offline TA/TO channels generally produce lower ADR and higher cancellation rates, suggesting areas where pricing strategies and operational policies could be improved.
 
 
 
 
-1) City Hotels had extremely high cancellations of 53.26% to 70.76% in summer months (July–August 2015).<p>
-2) Resort Hotels show high cancellations of 37.54% to 38.38% in mid-year 2017 (June–August).<p>
-3) Revenue lost aligns with high cancellations, but some months with moderate cancellation rates still have significant revenue loss (high total_potential_revenue).<p>
-
-o	Target high-risk months and hotels:<p>
-•	For City Hotels, summer months (July–August) need prepayment policies or cancellation fees.<p>
-•	For Resort Hotels, monitor June–August; consider flexible rescheduling instead of full refund.<p>
-
-o	Dynamic deposit / cancellation policies:<p>
-• Apply higher deposits for high-risk months.<p>
-•	Offer non-refundable discounts to stabilize revenue.<p>
-
-o	Customer communication & reminders:<p>
-•	Send reminder emails 7–14 days before arrival to reduce last-minute cancellations.<p>
-•	Introduce loyalty incentives for guests who don’t cancel.<p>
-
-o	Revenue protection:<p>
-•	Focus on months with moderate cancellation rate but high revenue potential for promotional campaigns.<p>
 
 
-
-<img width="656" height="865" alt="image" src="https://github.com/user-attachments/assets/ea89043f-f72e-4247-b333-e05216ee0fba" />
-
-
-4) Biggest dollar leakage is from No Deposit / Transient bookings for both hotel types which account for the largest share of revenue lost (≈ 6.3M + 4.7M).<p>
-5) Some Non-Refund segments show 100% cancellation and sizable money lost (City Hotel Non Refund Transient ≈ 3.04M lost). This is counter-intuitive (non-refundable should reduce cancellations) — likely a data / business-process mismatch or special-case behavior (e.g., forced cancellations by property/OTA).<p>
-6) Transient-Party and Contract segments also contribute meaningfully in volume and lost rev, but at lower cancellation% (often 10–33%). Contract shows lower ADR in some rows but moderate lost revenue.<p>
-
-o	Target the No-Deposit → Transient segment first (highest money at risk):<p>
-•	Offer a small, time-limited prepayment discount to convert “no deposit” guests to paid reservations.<p>
-•	Introduce an opt-in non-refundable rate with lower price but locked-in revenue.<p>
-
-o Require deposit guarantees or minimum commitment levels (e.g., at least 80% of rooms booked must be paid even if partially canceled).<p>
-o Offer a credit on future stays instead of full refunds, reducing immediate revenue loss.<p>
-
-
-
-<img width="656" height="812" alt="image" src="https://github.com/user-attachments/assets/b90f2919-8501-46b1-996c-0684e3f5e44f" />
-
-7) The TA/TO Aviation channel consistently shows high booking volumes (e.g., PRT: 25,214 bookings; GBR: 4,727 bookings) with moderate to high ADR (~98–117) and manageable cancellation rates (~26–33%).<p>
-8) Aviation and Direct segments in major markets (GBR, ESP, ITA) maintain strong ADR with relatively low cancellations (ADR 106–117, cancellation 16–27%).<p>
-9) Countries like GBR, ESP, ITA, DEU provide the best balance of high ADR, high booking volume, and moderate-to-low cancellation rates, making them ideal for targeted marketing.<p>
-
-o	Reallocate Marketing Spend to Efficient Channels:<p>
-•	Focus more on TA/TO Aviation and Direct channels in GBR, ESP, ITA, and DEU, as they provide strong ADR and booking volume with manageable cancellations.<p>
-
-o	Optimize Segment-targeted Strategies:<p>
-•	Prioritize Aviation and Direct segments for promotions, upselling, and loyalty programs.<p>
-
-o	Country-specific Marketing Focus:<p>
-•	Invest in high-potential countries with good ADR-to-volume ratio and low-to-moderate cancellations (GBR, ESP, ITA, DEU).<p>
-
-<img width="656" height="857" alt="image" src="https://github.com/user-attachments/assets/d2f8a938-fc44-4940-a2cf-1df66623d0b8" /><p>
-10) Repeat guests cancel 14.69%, new guests cancel 38.04%.<p>
-11) 114,323 of 117,992 bookings are new guests (~97%).<p>
-
-o	Prioritize retention programs for repeat guests (loyalty points, exclusive offers).<p>
-o	Introduce prepayment, non-refundable options, or small deposits for new guests to reduce cancellation risk.<p>
-o	Consider welcome offers tied to repeat behavior (discount on second booking) to convert more new guests into repeat guests.<p>
-
-<img width="656" height="385" alt="image" src="https://github.com/user-attachments/assets/0ed50b9c-e451-410a-9897-fa5ccaee2307" />
-
-12) 91.79% cancellation rate for guests with previous cancellations vs 34.20% for guests with no previous cancellations.<p>
-13) ADR of 105.09 for no previous cancellers vs 77.84 for previous cancellers.<p>
-
-o	Introduce prepayment or non-refundable rate plans for guests with a history of cancellations.
-o	Consider a “loyalty conversion” program: reward them only after their next confirmed booking to encourage commitment.<p>
-o	Focus retention and loyalty programs on these guests: e.g., early-access deals, special offers, loyalty points.<p>
-o	Upsell premium packages, room upgrades, or add-ons to maximize revenue from this low-risk segment.<p>
-
-
-
-
-
-
-
-***
-
-**Conclusion:** <p> The analysis of hotel bookings reveals that profitability and booking efficiency vary significantly across distribution channels, market segments, and countries. Direct and Corporate channels consistently deliver higher average daily rates (ADR) with lower cancellation rates, making them the most reliable for revenue. TA/TO channels, particularly Aviation and Online TA, drive the highest booking volumes but carry moderate cancellation risks, highlighting opportunities to optimize campaigns and reduce revenue leakage. Group bookings and Offline TA/TO channels generally underperform in ADR and exhibit higher cancellations, indicating areas where marketing and operational strategies can be improved.<p>
 
 
 
